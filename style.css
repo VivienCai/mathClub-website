@@ -1,0 +1,178 @@
+@font-face {
+  src: url(fonts/Montserrat-Regular.ttf);
+  font-family: Montserrat;
+}
+@font-face {
+  src: url(fonts/Montserrat-Bold.ttf);
+  font-family: Montserrat-Bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: rgb(38, 39, 41);
+  color: rgba(255, 255, 255, 0.966);
+  font-family: Montserrat;
+  height: 200%;
+}
+.main-container {
+  padding: 9% 0% 10% 15%;
+  font-size: 250%;
+  line-height: 125%;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/* UHS MATH CLUB */
+#title {
+  animation: fadeIn ease 3s forwards;
+  line-height: 125%;
+}
+.sub {
+  opacity: 0;
+  animation: fadeIn ease 3s forwards;
+  animation-delay: 1.5s;
+  padding-bottom: 17px;
+}
+.sub-header {
+  padding-top: 1%;
+  padding-right: 25%;
+  padding-bottom: 2%;
+  line-height: 132%;
+}
+.red {
+  color: #e74747;
+  font-family: Montserrat-Bold;
+}
+
+.button {
+  font-family: Montserrat;
+  border: none;
+  border-radius: 20px;
+  font-size: 65%;
+  padding: 25px 50px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 2%;
+  margin-bottom: 5%;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  background-color: rgb(190, 190, 190);
+  box-shadow: 0 9px rgb(119, 119, 119);
+}
+button:hover {
+  color: rgb(233, 233, 233);
+}
+button:active {
+  transform: translateY(5px);
+}
+#gc-button:hover {
+  background-color: #2a9452;
+  box-shadow: 0 9px #19522f;
+}
+#gc-button:active {
+  box-shadow: 0 4px #19522f;
+}
+#ds-button:hover {
+  background-color: #5864e2;
+  box-shadow: 0 9px #373d86;
+}
+#ds-button:active {
+  box-shadow: 0 4px #373d86;
+}
+
+/* About */
+.about-container {
+  padding: 0% 20% 20% 15%;
+}
+#about {
+  padding-top: 75px;
+  font-size: 300%;
+}
+h3 {
+  font-size: 200%;
+  padding: 2% 0% 2% 0%;
+}
+.description {
+  font-size: 150%;
+  padding: 0% 0% 5% 0%;
+}
+
+/* Arrows */
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  margin: -6% 0% 20% 45%;
+}
+
+.arrows path {
+  stroke: #d1e7f3;
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+#main-footer {
+  text-align: center;
+  transform: translateX(-3%);
+}
