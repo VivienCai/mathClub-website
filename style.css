@@ -123,13 +123,13 @@ h3 {
 }
 
 .arrows path {
-  stroke: #d1e7f3;
+  stroke: #ffffff;
   fill: transparent;
   stroke-width: 2px;
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite;
 }
-
+  
 @keyframes arrow {
   0% {
     opacity: 0;
