@@ -1,2 +1,2 @@
 # mathclub-website
- A simple website for UHS math club
+ A simple website made for UHS math club.
