@@ -32,9 +32,16 @@ body {
 .main-container {
   padding: 10% 0% 0% 15%;
   font-size: 250%;
-  line-height: 125%;
+  line-height: 50%;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+.sub-container {
+    padding: 10% 0% 0% 15%;
+    font-size: 250%;
+    line-height: 50%;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 /* UHS MATH CLUB */
 #title {
@@ -50,11 +57,21 @@ body {
   padding-top: 1%;
   padding-right: 25%;
   padding-bottom: 2%;
-  line-height: 132%;
+  line-height: 150%;
+}
+.text-size-1 {
+    padding-top: 1%;
+    padding-right: 25%;
+    padding-bottom: 2%;
+    line-height: 150%;
 }
 .red {
   color: #9e60ee;
   font-family: Montserrat-Bold;
+}
+.white {
+    color: #FFFAFA;
+    font-family: Montserrat-Bold;
 }
 
 .button {
@@ -109,8 +126,8 @@ h3 {
   padding: 2% 0% 2% 0%;
 }
 .description {
-  font-size: 150%;
-  line-height: 150%;
+  font-size: 120%;
+  line-height: 0%;
   padding: 0% 0% 5% 0%;
 }
 
@@ -120,7 +137,7 @@ h3 {
   width: 60px;
   height: 72px;
   position: relative;
-  margin: 6% 0% 10% 45%;
+  margin: 3% 45% 0% 45%;
   animation: fadeIn ease 3s forwards;
   animation-delay: 2.5s;
 }
@@ -131,6 +148,18 @@ h3 {
   stroke-width: 2px;
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite;
+}
+
+#topright {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    height: 400px;
+    width: 400px;
+    background: url(TRbanner.gif) no-repeat;
+    text-indent: -999em;
+    text-decoration: none;
 }
 
 @keyframes arrow {
